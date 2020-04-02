@@ -28,9 +28,9 @@ public class CourseService {
 	}
 	
 	
-	public Optional<Course> getCourse(String topicId) {
+	public Optional<Course> getCourse(String id) {
 		//return topics.stream().filter(t ->t.getId().equals(id)).findFirst().get();
-		return courseRepository.findById(topicId);
+		return courseRepository.findById(id);
 	}
 
 
